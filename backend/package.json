@@ -1,0 +1,55 @@
+{
+  "name": "country-info-backend",
+  "version": "1.0.0",
+  "description": "Backend for Country Info App providing country details via a REST API.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "backend",
+    "country-info",
+    "express",
+    "api"
+  ],
+  "author": "GilCFP",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "react-chartjs-2": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.0.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "env": {
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2021
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
+}
